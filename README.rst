@@ -6,7 +6,7 @@ Generate LaTeX tables in Python.
 Example
 -------
 
-::code:python
+.. code:: python
     import pandas as pd
     from tabla import TableColumn, Table
 
