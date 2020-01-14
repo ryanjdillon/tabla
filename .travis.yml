@@ -8,3 +8,10 @@ install:
 - pip install -r requirements_test.txt
 script:
 - pytest --black --flake8
+deploy:
+  provider: pypi
+  user: __token__
+  password:
+    secure: hFTloR/2Yi2fxFLQhY/fm7V/IV4YmAjUzDoLit5zoGCgz36GcF1vHE+bzSEmRDRF9ESNdcZBJYV59+Grwg3X4DhMgALDJBZC5E1HUZTx/fpDhg26OA9Bpjqaco/ntGGvukJWTrW5vbMAJo8qHdinxirKQpUjP8ZSGiLiHlKx3HDCWDu47nM1N1SuKsbYMAgujTsgvD5sDtwM+ELvRtd/7yI4BJCAQbaqT9k17lZpzLyYmECFVwADg7LW7P/8QmKaAwn+nenuKwDEoxknCiyyuC2Jav72xLpIQaQWUPeHO38NSJMaSkr/OlzqPsXKA20S6OxbcM9xwoLAFDxd7Bu34rme06bwHW/MxqRwVQI2LYDhD/5tPybjE4LLCBrIFy4KweBDVv36rp7JBdgArGQalDzTGTu42WZU23OihT4lTabIGnrI5y7b01dxmYJQn9fUuWmmFaGKOL8k8WnPXJorlBXfHS7WQHdctZvrwhj4zVLvAP6gipSt9lCaUK6Vvkej4znFsvrSk+rsE/XAmHHf5sfm3gVPUOSzWTFUU8Ct7T9l+LPVKH4/6PUwDMePkUIt2agSh8lm+Bvj+QL5NcGwV0WYwUN7lD0jtECojSHzwznJ1dLvkgjI/M95ad5MKnWN6au9N2M4RkMsK4rZohlZQ4gqOIAb8TNmz0LYqyf77nw=
+  on:
+    tags: true
