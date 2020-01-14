@@ -1,4 +1,1 @@
-pytest
-black
-pytest-black
-pytest-flake8
+pandas

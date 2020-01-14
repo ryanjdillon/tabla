@@ -23,7 +23,7 @@ setup(
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     setup_requires=setup_requirements,
-    install_requires=requirements("requirements.in"),
+    install_requires=requirements("requirements.txt"),
     tests_require=requirements("requirements_test.txt"),
     include_package_data=True,
     use_scm_version={"write_to": "src/tabla/_version.py", "relative_to": __file__},
